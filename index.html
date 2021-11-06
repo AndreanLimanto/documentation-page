@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="navbar">
+  <header class="title">Thesis Documentation</header>
+  <ul>
+    <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+    <li><a href="#Literature_Review" class="nav-link">Literature Review</a></li>
+    <li><a href="#Research_Methodology" class="nav-link">Research Methodology</a></li>
+    <li><a href="#Implementation" class="nav-link">Implementation</a></li>
+    <li><a href="#Evaluation_Result" class="nav-link">Evaluation Result</a></li>
+    <li><a href="#Conclution" class="nav-link">Conclution</a></li>
+    <li><a href="#">Update1</a></li>
+    <li><a href="#">Update2</a></li>
+    <li><a href="#">Update3</a></li>
+    <li><a href="#">Update4</a></li>
+    <li><a href="#">Update5</a></li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section id="Introduction" class="main-section">
+    <header>Introduction</header>
+    <article>
+      <p>Currency refers to money in any form when being used as a medium for exchange, especially circulating coin and banknote. Money is a modern payment instrument that is commonly used in one place to carry out the transaction for purchase and sale of goods or services.</p>
+      <p>Based on this consideration, this research will be carried out by utilizing the development of Deep Learning which will be used as an automatic detection method to classify the original currency and the counterfeit currency on Indonesian banknotes.</p>
+    </article>
+  </section>
+  <section id="Literature_Review" class="main-section">
+    <header>Literature Review</header>
+    <article>
+      <p>In general, research related to the topic of detecting counterfeit banknotes has been carried out, especially in India. For Indonesian banknotes, there are a little number of research for detecting counterfeit banknotes. Based on the results of several research that have been done, the most method for detecting counterfeit banknotes is Edge Detection using Canny Operator.</p>
+      <p>The conclusion based on the existing research is deep learning can be used for detecting counterfeit currency, the most method that has been used is Edge Detection, India banknote is the most using as dataset on existing research, latent image is not commonly used for automatic detection of counterfeit currency, the dataset using on Edge Detection method is no more than 50 image.</p>
+      <p>Indonesian banknotes have 12 security featute, as:
+        <ol>
+          <li>Money Material</li>
+          <li>Money Color</li>
+          <li>Security Thread</li>
+          <li>Colour Shifting Ink</li>
+          <li>Multicolour Latent Image</li>
+          <li>Special Printing Technique</li>
+          <li>Blind Code</li>
+          <li>Watermark</li>
+          <li>Rectoverso</li>
+          <li>Invisible Ink</li>
+          <li>Microtext</li>
+          <li>Latent Image</li>
+        </ol>
+      </p>
+    </article>
+  </section>
+  <section id="Research_Methodology" class="main-section">
+    <header>Research Methodology</header>
+    <article>
+      <p>Newest emission of Indonesian banknote is 2016 emission that has seven denominations: IDR 1,000, IDR 2,000, IDR 5,000, IDR 10,000, IDR 20,000, IDR 50,000, and  IDR 100.000. The most findings of counterfeit banknote are found on Rp.100.000,- denominations which are the biggest denomination on Indonesian banknotes. Based on this, the research will use dataset of IDR 100,000 2016 emission.</p>
+      <p>In this research, the original banknote will labeled as original 1-original 17 while the counterfeit banknote will labeled as counterfeit 1-counterfeit 17. The dataset will be split into three path. First path is dataset for training networks that containing images from both banknote dataset labeled with number 1-10 which means the training dataset have 1400 images that consist 700 images of original banknotes and 700 images of counterfeit banknotes.</p>
+      <p>After training and validation network, the next step is testing the image on testing dataset to the pretrained network. The testing results will show an amount of data that was sucessfully classified, which the performance of the test results will be evaluated using a confusion matrix.</p>
+    </article>
+  </section>
+  <section id="Implementation" class="main-section">
+    <header>Implementation</header>
+    <article>
+      <p>The Implementation process starting by building a pretrained network using deep learning toolbox on MatLab and then installing VGG-16 Toolbox, ResNet-50 Toolbox and GoogLeNet Toolbox. After that, the training and validation progress to the dataset using pretrained network started from VGG-16, ResNet-50 and the last is GoogLeNet. Figure 6 will show the training and validation result of VGG-16. Figure 6 will show the training and validation result of ResNet-50.</p>
+      <p>After training and validation process, the next step is testing all networks using dataset testing that have been prepared.</p>
+    </article>
+  </section>
+  <section id="Evaluation_Result" class="main-section">
+    <header>Evaluation Result</header>
+    <article>
+      <p>The result of this research are all of the pretrained network sucessfully classify the original and the counterfeit banknotes. This means that convolutional neural network can be used as detection method for counterfeit currency on Indonesian banknotes.</p>
+      <p class="result">VGG-16 Result:</p>
+      <p><code>
+        Sensitifity = TP/(TP+FN) = 1
+      </code></p>  
+      <p><code>
+        Specficity = TN/(TN+FP) = 1
+      </code></p>
+      <p><code>
+        Accuracy = (TP+TN)/(TP+TN+FP+FN) = 1
+      </code></p>
+      <p class="result">ResNet-50 Result:</p>
+      <p><code>
+        Sensitifity = TP/(TP+FN) = 1
+      </code></p>  
+      <p><code>
+        Specficity = TN/(TN+FP) = 1
+      </code></p>
+      <p><code>
+        Accuracy = (TP+TN)/(TP+TN+FP+FN) = 1
+      </code></p>
+      <p class="result">GoogleNet Result:</p>
+      <p><code>
+        Sensitifity = TP/(TP+FN) = 1
+      </code></p>  
+      <p><code>
+        Specficity = TN/(TN+FP) = 1
+      </code></p>
+      <p><code>
+        Accuracy = (TP+TN)/(TP+TN+FP+FN) = 1
+      </code></p>
+      <p>The result also show that GoogLeNet is the best practice of pretrained network in this research because GoogLeNet get 100% accuracy and only takes 28 mins and 46 sec on training and validation process.</p>
+    </article>
+  </section>
+  <section id="Conclution" class="main-section">
+    <header>Conclution</header>
+    <article>
+      <p>Circulation of the counterfeit banknotes must be reduced as mush as possible to avoid the inflation. The authorities may have provided many security features, but the prevention from end users is better for reducing the circulation of counterfeit money.</p>
+      <p>This research is supporting a development of an expert system using deep learning with convolutional neural network architecture that can be used by society so the common people can detecting the counterfeit banknotes more faster and easily.</p>
+    </article>
+  </section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</main>
+</body>
+</html>
