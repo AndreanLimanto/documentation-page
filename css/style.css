@@ -1,0 +1,105 @@
+body {
+  background-color: lightskyblue;
+  background-image: url(https://images4.imagebam.com/16/1a/ee/ME4APEM_o.png);
+  min-width: 240px;
+  color: black;
+  font-family: 'Times New Roman', calibri, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  color: black;
+  margin: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+  text-indent: 30px;
+}
+
+.title {
+  text-align: center;
+}
+
+#navbar {
+  background-image: url(../img/bg.png);
+  position: fixed;
+  min-width: 240px;
+  width: 250px;
+  height: 100%;
+  border-right: 5px solid dodgerblue;
+  overflow: auto;
+}
+
+#navbar ul {
+  text-decoration: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  border-top: 2px solid dodgerblue;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 240px;
+  padding: 30px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #404040;
+  margin: 15px;
+  font-size: 14px;
+}
+
+section li {
+  margin: 5px 0px 0px 10px;
+}
+
+.result {
+  text-indent: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+code {
+  display: block;
+  width: 35%;
+  text-align: left;
+  position: relative;
+  line-height: 2;
+  background-color: mistyrose;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
