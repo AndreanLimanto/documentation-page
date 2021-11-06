@@ -24,10 +24,6 @@ p {
   text-align: center;
 }
 
-#navbar img {
-  height: 130px;
-}
-
 #navbar {
   background-image: url(../img/bg.png);
   position: fixed;
@@ -36,6 +32,10 @@ p {
   height: 100%;
   border-right: 5px solid dodgerblue;
   overflow: auto;
+}
+
+#navbar img {
+  width: 210px;
 }
 
 #navbar ul {
