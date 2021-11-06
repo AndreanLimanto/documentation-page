@@ -24,6 +24,10 @@ p {
   text-align: center;
 }
 
+#navbar img {
+  height: 130px;
+}
+
 #navbar {
   background-image: url(../img/bg.png);
   position: fixed;
